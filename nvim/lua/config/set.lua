@@ -4,11 +4,13 @@ vim.opt.relativenumber = true
 
 -- tab length
 vim.opt.tabstop = 2
-vim.opt.softtabstop = 2
 vim.opt.shiftwidth = 2
+vim.opt.softtabstop = 2
 vim.opt.expandtab = true
-vim.opt.smartindent = true
-vim.opt.cindent = true
+vim.opt.smartindent = false
+vim.opt.autoindent = true
+vim.opt.backspace = { "indent", "eol", "start" }
+vim.opt.cindent = false
 
 vim.opt.wrap = false
 

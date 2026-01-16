@@ -26,10 +26,6 @@ return {
 	},
 
 	config = function()
-		require("conform").setup({
-			formatters_by_ft = {},
-		})
-
 		local cmp = require("cmp")
 		local cmp_lsp = require("cmp_nvim_lsp")
 		local capabilities = vim.tbl_deep_extend(
@@ -56,7 +52,18 @@ return {
 				end,
 
 				zls = function()
-					local lspconfig = require("lspconfig")
+					local lspconfig = require("lspconfig").setup({
+						cmd = {
+							"clangd",
+							"--background-index",
+							"--clang-tidy",
+							"--header-insertion=iwyu",
+							"--completion-style=detailed",
+							"--function-arg-placeholders",
+							"--fallback-style=llvm",
+							"--extra-arg=-std=c++23",
+						},
+					})
 					lspconfig.zls.setup({
 						root_dir = lspconfig.util.root_pattern(".git", "build.zig", "zls.json"),
 						settings = {
@@ -104,6 +111,7 @@ return {
 							"vue",
 							"svelte",
 							"heex",
+							"cpp",
 						},
 					})
 				end,
