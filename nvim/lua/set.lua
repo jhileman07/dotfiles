@@ -7,10 +7,7 @@ vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.softtabstop = 2
 vim.opt.expandtab = true
-vim.opt.smartindent = false
-vim.opt.autoindent = true
-vim.opt.backspace = { "indent", "eol", "start" }
-vim.opt.cindent = false
+vim.opt.smartindent = true
 
 vim.opt.wrap = false
 
@@ -27,6 +24,3 @@ vim.opt.colorcolumn = "80"
 vim.opt.scrolloff = 999
 -- a little horizontal padding feels nicer when scrolling sideways
 vim.opt.sidescrolloff = 8
-
-vim.opt.autoindent = true
-vim.opt.smartindent = true

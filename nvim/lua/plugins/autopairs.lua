@@ -5,7 +5,7 @@ return {
 	opts = {
 		check_ts = true, -- use treesitter for smarter pairing
 		use_tresitter = true,
-		map_cr = true,
+		map_cr = false,
 		disable_filetype = { "TelescopePrompt", "spectre_panel" },
 		ts_config = {
 			lua = { "string" }, -- don't add pairs inside TS strings

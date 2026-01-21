@@ -1,6 +1,6 @@
 -- core modules
-require("config.set")
-require("config.remap")
+require "set"
+require "remap"
 
 -- --- personal helpers --------------------------------------------------------
 local augroup = vim.api.nvim_create_augroup
