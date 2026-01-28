@@ -1,19 +1,8 @@
-```markdown
 # Dotfiles
 
-Myconfiguration environment, managed with **GNU Stow** and **Git Submodules**.
+My configuration environment, managed with **GNU Stow** and **Git Submodules**.
 
-## 🛠️ Prerequisites
-
-On a fresh server (Ubuntu/Debian):
-
-```bash
-# Update and install essentials
-sudo apt update && sudo apt install -y git stow zsh fzf ripgrep bat
-
-```
-
-## 🚀 Installation
+## Installation
 
 ### 1. Clone the Repository
 
@@ -86,7 +75,7 @@ I use **Git Submodules** for all dependencies. This ensures 100% reproducibility
 
 ---
 
-## 👩‍💻 Management
+## Management
 
 ### Adding a New Zsh Plugin
 
@@ -108,9 +97,5 @@ Update the repo and all submodules (OMZ, themes, plugins) to their latest remote
 ```bash
 git pull
 git submodule update --remote --merge
-
-```
-
-```
 
 ```
