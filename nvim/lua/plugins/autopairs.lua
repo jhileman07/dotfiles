@@ -4,8 +4,7 @@ return {
 	event = "InsertEnter", -- load only when you start typing
 	opts = {
 		check_ts = true, -- use treesitter for smarter pairing
-		use_tresitter = true,
-		map_cr = false,
+		map_cr = true,
 		disable_filetype = { "TelescopePrompt", "spectre_panel" },
 		ts_config = {
 			lua = { "string" }, -- don't add pairs inside TS strings

@@ -24,3 +24,10 @@ vim.opt.colorcolumn = "80"
 vim.opt.scrolloff = 999
 -- a little horizontal padding feels nicer when scrolling sideways
 vim.opt.sidescrolloff = 8
+
+vim.opt.signcolumn = "yes"
+
+-- file management
+vim.opt.swapfile = false
+vim.opt.backup = false
+vim.opt.undofile = true

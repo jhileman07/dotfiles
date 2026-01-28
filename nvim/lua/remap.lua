@@ -1,9 +1,7 @@
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>e", vim.cmd.Ex)
 
-vim.opt.timeoutlen = 300
 vim.keymap.set("i", "jj", "<Esc>")
-vim.opt.timeoutlen = 300
 vim.keymap.set("v", "jj", "<Esc>")
 
 -- copy and paste remaps
